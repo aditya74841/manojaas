@@ -18,7 +18,14 @@ export default function Home() {
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-4xl glass rounded-3xl p-8 md:p-16 flex flex-col items-center text-center animate-fade-in">
-        <div className="mb-8 animate-fade-in animate-delay-1">
+        <div className="mb-8 animate-fade-in animate-delay-1 flex flex-col items-center">
+          <Image
+            src="/logo.png"
+            alt="Manojaas Logo"
+            width={180}
+            height={180}
+            className="mb-8 drop-shadow-xl hover:scale-110 transition-transform duration-500"
+          />
           <h2 className="text-cyan-200 font-sans tracking-[0.3em] text-sm uppercase mb-4">Welcome to</h2>
           <h1 className="text-6xl md:text-8xl font-serif text-white mb-6 drop-shadow-2xl">
             Manojaas

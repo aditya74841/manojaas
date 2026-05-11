@@ -16,6 +16,13 @@ export const metadata: Metadata = {
   title: "Manojaas | The Finest Chaipatti",
   description: "Experience the authentic taste of premium chaipatti. Our exquisite tea collection is coming soon to your cup.",
   keywords: ["tea", "chaipatti", "premium tea", "Manojaas", "authentic tea"],
+  icons: {
+    icon: [
+      { url: "/logo.png" },
+      { url: "/logo.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
