@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -12,10 +11,11 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Manojaas | The Finest Chaipatti",
-  description: "Experience the authentic taste of premium chaipatti. Our exquisite tea collection is coming soon to your cup.",
-  keywords: ["tea", "chaipatti", "premium tea", "Manojaas", "authentic tea"],
+export const metadata = {
+  title: "Manojaas | Har Subah Ki Kadak Shuruat",
+  description:
+    "Discover Manojaas Assam CTC chaipatti: a bold, aromatic cup made for the everyday Indian chai ritual.",
+  keywords: ["tea", "chaipatti", "Assam CTC", "Manojaas", "Indian chai"],
   icons: {
     icon: [
       { url: "/logo.png" },
@@ -25,11 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable} h-full antialiased`}>
       <body className="min-h-full">{children}</body>
